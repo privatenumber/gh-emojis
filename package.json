@@ -32,6 +32,7 @@
 	},
 	"devDependencies": {
 		"@pvtnbr/eslint-config-base": "^0.1.3",
+		"comment-mark": "^1.0.0",
 		"eslint": "^7.16.0",
 		"got": "^11.8.1",
 		"husky": "^4.3.6",
@@ -41,9 +42,14 @@
 	"eslintConfig": {
 		"extends": "@pvtnbr/eslint-config-base",
 		"rules": {
-			"import/no-extraneous-dependencies": ["error", {
-				"devDependencies": ["fetch.js"]
-			}]
+			"import/no-extraneous-dependencies": [
+				"error",
+				{
+					"devDependencies": [
+						"fetch.js"
+					]
+				}
+			]
 		}
 	}
 }
