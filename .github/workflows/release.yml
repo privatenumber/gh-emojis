@@ -20,8 +20,8 @@ jobs:
           pnpm i --frozen-lockfile
       - name: Lint
         run: npm run lint
-      - name: Fetch
-        run: npm run fetch
+      - name: Build
+        run: npm run build
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

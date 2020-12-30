@@ -16,4 +16,4 @@ node_modules
 .env.test
 
 # distribution
-emojis.*
+emojis.*.js
