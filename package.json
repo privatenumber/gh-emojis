@@ -1,7 +1,7 @@
 {
 	"name": "gh-emojis",
 	"version": "0.0.0-semantic-release",
-	"description": "Fetch GitHub emojis from their API as an npm package",
+	"description": "Use GitHub emojis from their API as an npm package",
 	"keywords": [
 		"github",
 		"api",
