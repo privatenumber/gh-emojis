@@ -5,7 +5,9 @@
 	"keywords": [
 		"github",
 		"api",
-		"emojis"
+		"emoji",
+		"emojis",
+		"markdown"
 	],
 	"license": "MIT",
 	"repository": "privatenumber/gh-emojis",
