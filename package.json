@@ -1,0 +1,49 @@
+{
+	"name": "gh-emojis",
+	"version": "0.0.0-semantic-release",
+	"description": "Fetch GitHub emojis from their API as an npm package",
+	"keywords": [
+		"github",
+		"api",
+		"emojis"
+	],
+	"license": "MIT",
+	"repository": "privatenumber/gh-emojis",
+	"funding": "https://github.com/privatenumber/gh-emojis?sponsor=1",
+	"author": {
+		"name": "Hiroki Osame",
+		"email": "hiroki.osame@gmail.com"
+	},
+	"files": [
+		"emojis.*"
+	],
+	"main": "emojis.esm.js",
+	"scripts": {
+		"fetch": "node fetch.js",
+		"lint": "eslint ."
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.js": "eslint"
+	},
+	"devDependencies": {
+		"@pvtnbr/eslint-config-base": "^0.1.3",
+		"eslint": "^7.16.0",
+		"got": "^11.8.1",
+		"husky": "^4.3.6",
+		"lint-staged": "^10.5.3",
+		"rollup": "^2.35.1"
+	},
+	"eslintConfig": {
+		"extends": "@pvtnbr/eslint-config-base",
+		"rules": {
+			"import/no-extraneous-dependencies": ["error", {
+				"devDependencies": ["fetch.js"]
+			}]
+		}
+	}
+}
