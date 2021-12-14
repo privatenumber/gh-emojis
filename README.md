@@ -5,7 +5,7 @@ Use GitHub emojis from their API as an npm package
 <sub>If you like this project, please star it & [follow me](https://github.com/privatenumber) to see what other cool projects I'm working on! ❤️</sub>
 
 ## 🙋‍♂️ Why?
-GitHub has an [API end-point for emojis](https://docs.github.com/en/free-pro-team@latest/rest/reference/emojis) but the response is static and it counts against your rate limit quota. This package contains the response in JSON, UMD, and ESM formats.
+GitHub has an [API end-point for emojis](https://docs.github.com/en/free-pro-team@latest/rest/reference/emojis) and the response is static but it counts against your rate limit quota. This package contains the response in JSON, UMD, and ESM formats.
 
 ## 🚀 Install
 ```sh
