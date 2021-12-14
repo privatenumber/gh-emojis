@@ -16,8 +16,7 @@ jobs:
           node-version: 14.x
       - name: Install dependencies
         run: |
-          npm i -g pnpm
-          pnpm i --frozen-lockfile
+          npx ci
       - name: Lint
         run: npm run lint
       - name: Build
